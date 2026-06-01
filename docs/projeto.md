@@ -1,12 +1,12 @@
 # Projeto e Arquitetura
 
-## 📌 Estrutura do Sistema
+##  Estrutura do Sistema
 
 O sistema é modularizado e utiliza herança e polimorfismo duplo (tanto para os personagens de combate quanto para os itens do inventário), garantindo uma estrutura escalável e limpa.
 
 ---
 
-## 🧱 Detalhamento das Classes
+##  Detalhamento das Classes
 
 ### Character
 Classe base abstrata do sistema. É utilizada tanto para estruturar as classes dos Heróis quanto para o **reaproveitamento de código na criação do Chefão**, evitando a duplicação de lógica.
@@ -34,7 +34,7 @@ A classe da interface gráfica que gerencia os turnos. Ela associa os objetos, a
 
 ---
 
-## ⚙️ Arquitetura dos Novos Complementos
+##  Arquitetura dos Novos Complementos
 
 ### Estrutura de Conquistas (Achievements)
 Será modelada como uma `struct` interna na `MainWindow`:
