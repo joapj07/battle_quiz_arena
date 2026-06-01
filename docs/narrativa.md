@@ -1,19 +1,19 @@
 
-# 🎭 Roteiro e Narrativa do Jogo - Battle Quiz Arena
+# Roteiro e Narrativa do Jogo - Battle Quiz Arena
 
 Este arquivo contém o banco de dados inicial de perguntas, alternativas, as falas de fim de jogo e as reações dinâmicas do Chefão ("O Grão-Mestre do Silício") para interações em tempo real.
 
 ---
 
-## 😈 Perfil do Adversário: O Grão-Mestre do Silício
+##  Perfil do Adversário: O Grão-Mestre do Silício
 * **HP Base:** 200
 * **Descrição:** Uma entidade cibernética que se alimenta de bugs e circuitos mal projetados. Ele odeia código limpo e adora humilhar estudantes que esquecem de colocar ponto e vírgula.
 
 ---
 
-## 🎲 Banco de Perguntas e Alternativas
+##  Banco de Perguntas e Alternativas
 
-### 🔵 Bloco 1: Programação Orientada a Objetos (POO)
+###  Bloco 1: Programação Orientada a Objetos (POO)
 
 **Pergunta 1:** Qual pilar da POO é responsável por esconder os detalhes internos de um objeto e expor apenas o necessário através de métodos públicos?
 * A) Herança
@@ -52,7 +52,7 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 
 ---
 
-### ⚡ Bloco 2: Conhecimentos Básicos de Eletrônica
+###  Bloco 2: Conhecimentos Básicos de Eletrônica
 
 **Pergunta 6:** De acordo com a Lei de Ohm, se você mantiver a resistência de um circuito constante e duplicar a tensão (Voltagem), o que acontece com a corrente elétrica?
 * A) A corrente cai pela metade.
@@ -91,46 +91,46 @@ Este arquivo contém o banco de dados inicial de perguntas, alternativas, as fal
 
 ---
 
-## 🎒 Reações do Chefão ao Uso de Itens (Inventário)
+##  Reações do Chefão ao Uso de Itens (Inventário)
 
 Quando o jogador decide gastar seu turno usando um item estratégico, o Chefão reage de forma ácida no log de batalha (sorteado aleatoriamente):
 
-### 🧪 Uso da Poção de Cura
+###  Uso da Poção de Cura
 * **Frase 1:** "O quê?! Usando patch de correção em tempo de execução? Isso é gambiarra, seu código continua quebrado!"
 * **Frase 2:** "Pode recuperar o seu HP, mas não há memória RAM suficiente no mundo para salvar a sua nota!"
 
-### ⚡ Uso do Elixir de Overclock (Attack Buff)
+###  Uso do Elixir de Overclock (Attack Buff)
 * **Frase 1:** "Overclock? Cuidado para não fritar seus neurônios antes de responder a próxima pergunta!"
 * **Frase 2:** "Pode aumentar o seu poder de ataque, mas se errar a sintaxe, o compilador vai te esmagar do mesmo jeito!"
 
 ---
 
-## 🎲 Eventos Aleatórios de Turno (Fator RPG)
+##  Eventos Aleatórios de Turno (Fator RPG)
 
 Eventos que podem acontecer de forma inesperada no início de um turno, alterando as regras temporariamente:
 
-* **⚡ Evento 1: Oscilação na Rede Elétrica**
+* ** Evento 1: Oscilação na Rede Elétrica**
   * *Texto na Tela:* "AVISO: Uma forte oscilação de energia atingiu a arena! O próximo ataque de qualquer um dos lados causará DANO CRÍTICO DUPLO!"
-* **🦠 Evento 2: Ataque DDOS**
+* ** Evento 2: Ataque DDOS**
   * *Texto na Tela:* "ALERTA: O Chefão iniciou um ataque DDOS nos seus servidores! Você perdeu um item aleatório do seu inventário devido à sobrecarga!"
-* **🛠️ Evento 3: Refatoração de Código**
+* ** Evento 3: Refatoração de Código**
   * *Texto na Tela:* "BÔNUS: Você encontrou um trecho de código antigo e o refatorou com sucesso. Você recuperou 20 de HP instantaneamente!"
 
 ---
 
-## 🏆 Sistema de Conquistas (Achievements)
+##  Sistema de Conquistas (Achievements)
 
 Medalhas internas que o jogador desbloqueia e que serão validadas e exibidas na aba de Ranking:
 
-1. **🏅 Mestre do Silício**
+1. ** Mestre do Silício**
    * *Requisito:* Responder corretamente a 5 perguntas seguidas de Eletrônica Básica.
    * *Mensagem:* "Conquista Desbloqueada: Mestre do Silício! O Grão-Mestre respeita seus conhecimentos de hardware."
 
-2. **🏅 Código Limpo (Clean Code)**
+2. ** Código Limpo (Clean Code)**
    * *Requisito:* Vencer o jogo sem usar nenhuma Poção de Cura do inventário.
    * *Mensagem:* "Conquista Desbloqueada: Código Limpo! Você passou pela arena sem precisar de remendos ou gambiarras."
 
-3. **🏅 À Beira do Crash**
+3. ** À Beira do Crash**
    * *Requisito:* Vencer a batalha final com menos de 5% de HP restante.
    * *Mensagem:* "Conquista Desbloqueada: À Beira do Crash! Sobreviveu por um ponteiro!"
 
