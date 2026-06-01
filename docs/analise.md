@@ -1,12 +1,12 @@
 # Análise de Funcionalidades do Sistema
 
-## 📌 Objetivo do Jogo
+##  Objetivo do Jogo
 
 Desenvolver um jogo de batalha em turnos utilizando C++, Qt Creator e conceitos de Programação Orientada a Objetos. O jogador responderá perguntas técnicas para enfrentar um Chefão, gerenciará itens consumíveis e terá seu recorde salvo em um ranking local.
 
 ---
 
-## ⚙️ Funcionalidades Implementadas no Jogo
+##  Funcionalidades Implementadas no Jogo
 
 - **Escolha de Personagem:** O usuário seleciona obrigatoriamente uma classe entre Guerreiro, Mago ou Arqueiro na tela inicial antes de iniciar o combate.
 - **Sistema de Quiz Técnico:** Exibição em tela de perguntas de múltipla escolha focadas em POO e Eletrônica Básica, contendo 4 alternativas cada.
@@ -23,7 +23,7 @@ Desenvolver um jogo de batalha em turnos utilizando C++, Qt Creator e conceitos 
 
 ---
 
-## 📐 Diretrizes Técnicas de Desenvolvimento
+##  Diretrizes Técnicas de Desenvolvimento
 
 - **Linguagem Utilizada:** Escrito e estruturado de forma nativa e pura em C++.
 - **Construção Gráfica:** Desenvolvido em ambiente desktop utilizando a biblioteca visual Qt Widgets (`QTabWidget`, `QProgressBar`, `QTextEdit`).
