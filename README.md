@@ -1,10 +1,10 @@
-# 🎮 Battle Quiz Arena - Ultimate Edition
+#  Battle Quiz Arena - Ultimate Edition
 
 Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos de Programação Orientada a Objetos.
 
 ---
 
-## 📌 Descrição
+##  Descrição
 
 Battle Quiz Arena é um RPG de texto e quiz em turnos com interface gráfica. O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o temível "Grão-Mestre do Silício".
 
@@ -18,13 +18,13 @@ Esta versão expandida conta com:
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Aplicar conceitos fundamentais e avançados de Programação Orientada a Objetos utilizando uma aplicação gráfica interativa em C++.
 
 ---
 
-## 🧠 Conceitos de POO Utilizados
+##  Conceitos de POO Utilizados
 
 - **Encapsulamento:** Atributos de personagens, itens e conquistas protegidos e expostos via métodos de acesso seguros.
 - **Herança e Polimorfismo:** Aplicados nos Personagens (classes derivadas de `Character`) e nos Itens (classes derivadas de `Item`).
@@ -33,7 +33,7 @@ Aplicar conceitos fundamentais e avançados de Programação Orientada a Objetos
 
 ---
 
-## 🧱 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```text
 battle-quiz-arena/
