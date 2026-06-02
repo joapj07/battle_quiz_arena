@@ -1,72 +1,145 @@
-#  Battle Quiz Arena - Ultimate Edition
+# Battle Quiz Arena - Ultimate Edition
 
 Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e conceitos de Programação Orientada a Objetos.
 
 ---
 
-##  Descrição
+## Descrição
 
-Battle Quiz Arena é um RPG de texto e quiz em turnos com interface gráfica. O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o temível "Grão-Mestre do Silício".
+Battle Quiz Arena é um jogo de perguntas e respostas em turnos com elementos de RPG e interface gráfica desenvolvida em Qt.
 
-Esta versão expandida conta com:
-- **Sistema de Quiz Técnico:** Pergunta de POO e Eletrônica Básica.
-- **Sistema de Inventário:** Itens consumíveis com herança e polimorfismo.
-- **Persistência de Dados Dupla:** Gravação de Ranking local e exportação de logs de combate para arquivos `.txt`.
-- **Eventos Aleatórios:** Modificadores de partida a cada turno (Fator RPG).
-- **Sistema de Conquistas (Achievements):** Desbloqueio de medalhas por feitos na arena.
-- **Customização Estética:** Alternância em tempo de execução entre os temas "Terminal Hacker" (Escuro) e "Laboratório" (Claro).
+O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o temível "Grão-Mestre do Silício". Para vencer, é necessário responder corretamente às perguntas, utilizar itens estrategicamente e administrar os recursos disponíveis durante a batalha.
 
 ---
 
-##  Objetivo
+## Objetivo
 
-Aplicar conceitos fundamentais e avançados de Programação Orientada a Objetos utilizando uma aplicação gráfica interativa em C++.
-
----
-
-##  Conceitos de POO Utilizados
-
-- **Encapsulamento:** Atributos de personagens, itens e conquistas protegidos e expostos via métodos de acesso seguros.
-- **Herança e Polimorfismo:** Aplicados nos Personagens (classes derivadas de `Character`) e nos Itens (classes derivadas de `Item`).
-- **Agregação e Composição:** O herói agrega uma lista de ponteiros de `Item`, e a `MainWindow` compõe a lista de `Achievement`.
-- **Persistência e Arquivos:** Fluxo de entrada e saída (I/O) de arquivos com `QFile` e `QTextStream` para persistência do ranking e geração de relatórios de partida (Logs).
+Aplicar conceitos fundamentais e avançados de Programação Orientada a Objetos por meio do desenvolvimento de uma aplicação gráfica interativa em C++ utilizando Qt Creator.
 
 ---
 
-##  Estrutura do Projeto
+## Funcionalidades
+
+* Seleção de personagens (Warrior, Mage e Archer)
+* Sistema de combate em turnos
+* Sistema de perguntas e respostas (Quiz)
+* Sistema de itens consumíveis
+* Ranking de jogadores
+* Eventos especiais durante a partida
+* Registro de partidas em arquivos de texto
+* Interface gráfica desenvolvida com Qt Widgets
+* Temas visuais personalizados
+
+---
+
+## Conceitos de POO Utilizados
+
+### Encapsulamento
+
+Os atributos das classes são protegidos e acessados através de métodos específicos (getters e setters), garantindo maior controle sobre os dados da aplicação.
+
+### Herança
+
+A classe `Character` serve como base para:
+
+* Warrior
+* Mage
+* Archer
+* Boss
+
+A classe `Item` serve como base para:
+
+* HealthPotion
+* AttackBuff
+
+### Polimorfismo
+
+Os personagens implementam comportamentos próprios para o método `attack()`.
+
+Os itens implementam diferentes comportamentos para o método `applyEffect()`.
+
+### Associação, Agregação e Composição
+
+As classes interagem entre si para representar o sistema de batalha, gerenciamento de perguntas, inventário e interface gráfica.
+
+### Persistência de Dados
+
+Utilização de arquivos para armazenamento de ranking e geração de relatórios das partidas.
+
+---
+
+## UML
+
+A documentação UML do projeto encontra-se na pasta `docs`.
+
+Diagramas disponíveis:
+
+* Casos de Uso
+* Estrutura de Classes
+* Relacionamentos entre Objetos
+
+---
+
+## Estrutura do Projeto
 
 ```text
-battle-quiz-arena/
+battle_quiz_arena/
 │
-├── CMakeLists.txt              # Configuração do build do sistema
-├── main.cpp                    # Ponto de entrada do programa
-├── mainwindow.h                # Header da janela principal
-├── mainwindow.cpp              # Lógica da interface gráfica e turnos
-├── mainwindow.ui               # Arquivo de design visual (Qt Designer)
+├── CMakeLists.txt
+├── main.cpp
 │
-├── character.h                 # Classe base dos personagens (Herói e Chefão)
+├── mainwindow.h
+├── mainwindow.cpp
+├── mainwindow.ui
+│
+├── character.h
 ├── character.cpp
-├── warrior.h                   # Classe derivada (Guerreiro)
+├── warrior.h
 ├── warrior.cpp
-├── mage.h                      # Classe derivada (Mago)
+├── mage.h
 ├── mage.cpp
-├── archer.h                    # Classe derivada (Arqueiro)
+├── archer.h
 ├── archer.cpp
 │
-├── item.h                      # Classe base abstrata para itens do inventário
+├── item.h
 ├── item.cpp
-├── healthpotion.h              # Item derivado (Poção de Cura)
+├── healthpotion.h
 ├── healthpotion.cpp
-├── attackbuff.h                # Item derivado (Elixir de Overclock)
+├── attackbuff.h
 ├── attackbuff.cpp
 │
-├── questionmanager.h           # Gerenciador do banco de dados do Quiz
+├── questionmanager.h
 ├── questionmanager.cpp
 │
-├── docs/                       # Documentação do projeto
-│   ├── analise.md              # Requisitos e especificações
-│   ├── narrativa.md            # Banco de perguntas, alternativas, eventos e conquistas
-│   ├── projeto.md              # Estrutura das classes e arquitetura
-│   └── testes.md               # Casos de teste do sistema
+├── docs/
+│   ├── analise.md
+│   ├── projeto.md
+│   ├── testes.md
+│   ├── casos_de_uso.md
+│   │
+│   └── imagens/
+│       ├── diagrama_casos_de_uso.png
+│       ├── diagrama_heranca.png
+│       └── diagrama_classes.png
 │
 └── README.md
+```
+
+---
+
+## Ferramentas Utilizadas
+
+* C++
+* Qt Creator
+* Qt Widgets
+* CMake
+* Git
+* GitHub
+
+---
+
+## Autor
+
+João Carlos Padoveze Junior
+
+Projeto desenvolvido para a disciplina de Programação Orientada a Objetos.
