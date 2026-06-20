@@ -86,9 +86,7 @@ Permite utilizar itens especiais durante a batalha.
 O jogador deve possuir itens disponíveis.
 
 **Pós-condição:**
-O efeito do item é aplicado ao personagem.  <img width="799" height="981" alt="diagrama de casos de uso" src="https://github.com/user-attachments/assets/2361a6ea-315f-4052-9ff9-994c20675f71" />
-
-
+O efeito do item é aplicado ao personagem.  
 ---
 
 ### Visualizar Status
