@@ -1,205 +1,213 @@
 # Battle Quiz Arena
 
-Projeto desenvolvido em C++ utilizando Qt Creator, Qt Widgets e os conceitos de Programação Orientada a Objetos (POO).
+Projeto desenvolvido em **C++** utilizando **Qt Creator**, **Qt Widgets** e os principais conceitos de **Programação Orientada a Objetos (POO)**.
 
 ---
 
-## Descrição
+# Descrição
 
 Battle Quiz Arena é um jogo de perguntas e respostas com elementos de RPG desenvolvido como projeto da disciplina de Programação Orientada a Objetos.
 
-O jogador escolhe uma classe de personagem (Guerreiro, Mago ou Arqueiro) e enfrenta o chefe final denominado **Grão-Mestre do Silício**. Durante a batalha, perguntas são apresentadas ao jogador e, dependendo da resposta, ações de ataque ou penalidades são aplicadas.
+O jogador escolhe uma classe de personagem (**Guerreiro, Mago ou Arqueiro**) para enfrentar o chefe final **Grão-Mestre do Silício**. Durante a batalha, perguntas são apresentadas ao jogador e, de acordo com a resposta, ataques, penalidades ou efeitos de itens são aplicados.
 
-O projeto foi desenvolvido utilizando interface gráfica com Qt Widgets e aplicando conceitos fundamentais de orientação a objetos.
-
----
-
-## Objetivos
-
-* Aplicar os conceitos de Programação Orientada a Objetos.
-* Desenvolver uma aplicação gráfica utilizando Qt Creator.
-* Utilizar herança, encapsulamento, polimorfismo e abstração.
-* Modelar o sistema utilizando diagramas UML.
-* Organizar o projeto seguindo boas práticas de desenvolvimento.
+O projeto foi desenvolvido utilizando interface gráfica com **Qt Widgets**, aplicando conceitos fundamentais de orientação a objetos e boas práticas de organização de software.
 
 ---
 
-## Funcionalidades
+# Objetivos
 
-* Seleção de personagem.
-* Classes disponíveis:
-
-  * Guerreiro (Warrior)
-  * Mago (Mage)
-  * Arqueiro (Archer)
-* Sistema de perguntas e respostas.
-* Sistema de combate contra chefe.
-* Sistema de itens.
-* Poção de Vida (HealthPotion).
-* Bônus de Ataque (AttackBuff).
-* Controle de vida dos personagens.
-* Interface gráfica desenvolvida com Qt Widgets.
-* Gerenciamento de perguntas através da classe QuestionManager.
+- Aplicar os principais conceitos de Programação Orientada a Objetos.
+- Desenvolver uma aplicação gráfica utilizando Qt Creator.
+- Implementar herança, encapsulamento, polimorfismo e abstração.
+- Modelar o sistema utilizando diagramas UML.
+- Organizar o projeto seguindo boas práticas de desenvolvimento.
 
 ---
 
-## Conceitos de Programação Orientada a Objetos
+# Funcionalidades
 
-### Encapsulamento
+- Seleção de personagem.
+- Classes disponíveis:
+  - Guerreiro (Warrior)
+  - Mago (Mage)
+  - Arqueiro (Archer)
+- Sistema de perguntas e respostas.
+- Sistema de combate contra o chefe.
+- Sistema de itens consumíveis.
+- Poção de Vida (HealthPotion).
+- Bônus de Ataque (AttackBuff).
+- Controle de vida dos personagens.
+- Gerenciamento de perguntas através da classe `QuestionManager`.
+- Interface gráfica desenvolvida com Qt Widgets.
 
-Os atributos das classes são protegidos por modificadores de acesso e manipulados através de métodos públicos.
+---
+
+# Conceitos de Programação Orientada a Objetos
+
+## Encapsulamento
+
+Os atributos das classes permanecem protegidos e são acessados por meio de métodos públicos (getters e setters), garantindo maior segurança e controle sobre os dados.
 
 Exemplos:
 
-* getHp()
-* getName()
-* getCurrentAttackPower()
+- `getHp()`
+- `getName()`
+- `getCurrentAttackPower()`
 
 ---
 
-### Herança
+## Herança
 
-A classe abstrata Character é utilizada como base para:
+A classe abstrata `Character` serve como base para:
 
-* Warrior
-* Mage
-* Archer
-* Boss
+- Warrior
+- Mage
+- Archer
+- Boss
 
-A classe abstrata Item é utilizada como base para:
+A classe abstrata `Item` serve como base para:
 
-* HealthPotion
-* AttackBuff
-
----
-
-### Polimorfismo
-
-Cada personagem implementa seu próprio método:
-
-* attack()
-
-Cada item implementa seu próprio método:
-
-* applyEffect()
+- HealthPotion
+- AttackBuff
 
 ---
 
-### Abstração
+## Polimorfismo
 
-As classes Character e Item foram modeladas como classes abstratas para representar conceitos genéricos do sistema.
+Cada personagem implementa seu próprio comportamento para o método:
+
+- `attack()`
+
+Cada item implementa seu próprio comportamento para:
+
+- `applyEffect()`
 
 ---
 
-## Estrutura de Classes
+## Abstração
+
+As classes `Character` e `Item` foram implementadas como classes abstratas, permitindo representar comportamentos genéricos que são especializados pelas classes derivadas.
+
+---
+
+# Estrutura das Classes
 
 ### Personagens
 
-* Character (abstrata)
-
-  * Warrior
-  * Mage
-  * Archer
-  * Boss
+- Character *(Classe Abstrata)*
+  - Warrior
+  - Mage
+  - Archer
+  - Boss
 
 ### Itens
 
-* Item (abstrata)
+- Item *(Classe Abstrata)*
+  - HealthPotion
+  - AttackBuff
 
-  * HealthPotion
-  * AttackBuff
+### Controle do Sistema
 
-### Gerenciamento
-
-* MainWindow
-* QuestionManager
-* Question (struct)
+- MainWindow
+- QuestionManager
+- Question *(struct)*
 
 ---
 
-## UML e Documentação
+# Documentação
 
-Toda a documentação do projeto encontra-se na pasta:
-
-docs/
+A documentação do projeto está disponível na raiz do repositório.
 
 Arquivos disponíveis:
 
-* analise.md
-* projeto.md
-* testes.md
-* narrativa.md
-* casos_de_uso.md
-* arquitetura.md
-
-Diagramas disponíveis:
-
-* Diagrama de Casos de Uso
-* Diagrama de Classes
+- README.md
+- analise.md
+- arquitetura.md
+- casos_de_uso.md
+- implementacao.md
+- narrativa.md
+- projeto.md
+- testes.md
 
 ---
 
-## Estrutura do Projeto
+# Diagramas UML
+
+Os diagramas do projeto encontram-se na pasta **img/**.
+
+Diagramas disponíveis:
+
+- Diagrama de Casos de Uso
+- Diagrama de Classes
+
+---
+
+# Organização do Projeto
 
 ```text
 battle_quiz_arena/
 │
-├── docs/
-│   ├── analise.md
-│   ├── arquitetura.md
-│   ├── casos_de_uso.md
-│   ├── narrativa.md
-│   ├── projeto.md
-│   ├── testes.md
+├── code/
 │   │
-│   └── imagens/
-│       ├── diagrama_casos_de_uso.png
-│       └── diagrama_classes.png
+│   ├── include/
+│   │   ├── character.h
+│   │   ├── warrior.h
+│   │   ├── mage.h
+│   │   ├── archer.h
+│   │   ├── boss.h
+│   │   ├── item.h
+│   │   ├── healthpotion.h
+│   │   ├── attackbuff.h
+│   │   ├── questionmanager.h
+│   │   └── mainwindow.h
+│   │
+│   ├── src/
+│   │   ├── character.cpp
+│   │   ├── warrior.cpp
+│   │   ├── mage.cpp
+│   │   ├── archer.cpp
+│   │   ├── boss.cpp
+│   │   ├── item.cpp
+│   │   ├── healthpotion.cpp
+│   │   ├── attackbuff.cpp
+│   │   ├── questionmanager.cpp
+│   │   ├── mainwindow.cpp
+│   │   └── main.cpp
+│   │
+│   ├── ui/
+│   │   └── mainwindow.ui
+│   │
+│   └── CMakeLists.txt
 │
-├── include/
-│   ├── character.h
-│   ├── warrior.h
-│   ├── mage.h
-│   ├── archer.h
-│   ├── boss.h
-│   ├── item.h
-│   ├── healthpotion.h
-│   ├── attackbuff.h
-│   ├── questionmanager.h
-│   └── mainwindow.h
+├── img/
+│   ├── diagrama_classes.png
+│   └── diagrama_casos_de_uso.png
 │
-├── src/
-│   ├── character.cpp
-│   ├── warrior.cpp
-│   ├── mage.cpp
-│   ├── archer.cpp
-│   ├── boss.cpp
-│   ├── item.cpp
-│   ├── healthpotion.cpp
-│   ├── attackbuff.cpp
-│   ├── questionmanager.cpp
-│   └── mainwindow.cpp
-│
-├── mainwindow.ui
 ├── README.md
-└── CMakeLists.txt
+├── analise.md
+├── arquitetura.md
+├── casos_de_uso.md
+├── implementacao.md
+├── narrativa.md
+├── projeto.md
+└── testes.md
 ```
 
 ---
 
-## Ferramentas Utilizadas
+# Ferramentas Utilizadas
 
-* C++
-* Qt Creator
-* Qt Widgets
-* CMake
-* Git
-* GitHub
+- C++
+- Qt Creator
+- Qt Widgets
+- CMake
+- Git
+- GitHub
 
 ---
 
-## Autor
+# Autor
 
-João Carlos Padoveze Junior
+**João Carlos Padoveze Junior**
 
-Projeto desenvolvido para a disciplina de Programação Orientada a Objetos.
+Projeto desenvolvido para a disciplina de **Programação Orientada a Objetos**.
