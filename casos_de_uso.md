@@ -4,9 +4,6 @@
 
 **Jogador**
 
-## Diagrama de Casos de Uso
-
-![Diagrama de Casos de Uso](diagrama_casos_de_uso.png)
 
 ---
 
