@@ -148,7 +148,6 @@ Diagramas disponíveis:
 battle_quiz_arena/
 │
 ├── code/
-│   │
 │   ├── include/
 │   │   ├── character.h
 │   │   ├── warrior.h
@@ -174,23 +173,23 @@ battle_quiz_arena/
 │   │   ├── mainwindow.cpp
 │   │   └── main.cpp
 │   │
-│   ├── ui/
-│   │   └── mainwindow.ui
-│   │
 │   └── CMakeLists.txt
 │
-├── img/
-│   ├── diagrama_classes.png
-│   └── diagrama_casos_de_uso.png
+├── docs/
+│   ├── img/
+│   │   ├── diagrama_classes.png
+│   │   └── diagrama_casos_de_uso.png
+│   │
+│   ├── analise.md
+│   ├── arquitetura.md
+│   ├── casos_de_uso.md
+│   ├── implementacao.md
+│   ├── narrativa.md
+│   ├── projeto.md
+│   └── testes.md
 │
-├── README.md
-├── analise.md
-├── arquitetura.md
-├── casos_de_uso.md
-├── implementacao.md
-├── narrativa.md
-├── projeto.md
-└── testes.md
+├── .gitignore
+└── README.md
 ```
 
 ---
