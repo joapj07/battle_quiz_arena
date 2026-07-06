@@ -20,6 +20,6 @@ Arquivos presentes:
 * healthpotion.h → Item responsável pela recuperação de vida.
 * attackbuff.h → Item responsável pelo aumento de ataque.
 * questionmanager.h → Gerencia o banco de perguntas do jogo.
-* mainwindow.h → Declaração da janela principal da aplicação.
+
 
 Os arquivos desta pasta representam a estrutura das classes utilizadas pelo sistema.
