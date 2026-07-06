@@ -15,7 +15,6 @@ Arquivos presentes:
 * healthpotion.cpp → Implementação da Poção de Vida.
 * attackbuff.cpp → Implementação do Elixir de Ataque.
 * questionmanager.cpp → Implementação do gerenciamento de perguntas.
-* mainwindow.cpp → Implementação da lógica da interface gráfica.
 * main.cpp → Ponto de entrada da aplicação.
 
 Esta separação entre declarações (.h) e implementações (.cpp) segue uma prática comum em projetos desenvolvidos em C++.
