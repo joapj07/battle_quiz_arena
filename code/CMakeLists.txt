@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.19)
 
 project(battle_quiz_arena LANGUAGES CXX)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
 qt_standard_project_setup()
 
@@ -14,9 +14,8 @@ qt_add_executable(battle_quiz_arena
     src/main.cpp
 
     # Interface
-    src/mainwindow.cpp
     include/mainwindow.h
-    ui/mainwindow.ui
+    src/mainwindow.cpp
 
     # Character
     include/character.h
@@ -56,10 +55,4 @@ target_include_directories(battle_quiz_arena PRIVATE
 target_link_libraries(battle_quiz_arena PRIVATE
     Qt6::Core
     Qt6::Widgets
-)
-
-# Traduções (opcional)
-qt_add_translations(battle_quiz_arena
-    TS_FILES
-        battle_quiz_arena_pt_BR.ts
 )
